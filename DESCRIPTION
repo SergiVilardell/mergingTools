@@ -1,0 +1,17 @@
+Package: mergingTools
+Type: Package
+Title: Tools to merge HEMs coming from separate subexperiments into one single dataframe
+Version: 0.1.0
+Author: Sergi Vilardell
+Maintainer: Sergi Vilardell <sergi.vilardell@bsc.es>
+Description: This contains two tools to merge HEMs from different subexperiments. HRM, which uses order statistics to merge; and MUCH which merges using a multivariate normal distribution
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports:
+    dplyr,
+    purrr,
+    data.table,
+    rlang,
+    MASS
