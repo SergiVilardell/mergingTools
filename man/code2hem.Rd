@@ -4,15 +4,23 @@
 \alias{code2hem}
 \title{Code to HEM name}
 \usage{
-code2hem(cod)
+code2hem(cod = NULL)
 }
 \arguments{
-\item{cod}{HEM code.}
+\item{cod}{HEM code on the T2080 manual.}
 }
 \value{
 Returns the name of the HEM that corresponds to the input code.
 }
 \description{
-This function returns the name of the HEM corresponding to the code of the T2080 manual.
+\code{code2hem} returns the name of the HEM corresponding to the code of the T2080 manual.
+When gathering experimental data the captured HEMs will be coded with a number.
+This functions transforms the number into the reference name in the T2080 manual.
 }
-\keyword{code}
+\examples{
+# code <- 1
+# hem <- code2hem(code)
+# hem
+# > "PROCESSOR_CYCLES"
+}
+\keyword{HEM}

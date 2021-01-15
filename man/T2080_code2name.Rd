@@ -11,16 +11,9 @@ An object of class \code{data.frame} with 262 rows and 2 columns.
 data(T2080_code2name)
 }
 \description{
-Data from a QTL experiment on gravitropism in
-Arabidopsis, with data on 162 recombinant inbred lines (Ler x
-Cvi). The outcome is the root tip angle (in degrees) at two-minute
-increments over eight hours.
+Dataset used to transform the codes from the T2080 manual into readable HEM names.
 }
 \examples{
 data(T2080_code2name)
-}
-\references{
-Moore et al. (2013) Genetics 195:1077-1086
-(\href{https://www.ncbi.nlm.nih.gov/pubmed/23979570}{PubMed})
 }
 \keyword{datasets}

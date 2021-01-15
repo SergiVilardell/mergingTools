@@ -1,17 +1,24 @@
 Package: mergingTools
-Type: Package
 Title: Tools to merge HEMs coming from separate subexperiments into one single dataframe
-Version: 0.1.0
+Version: 1.0.0
 Author: Sergi Vilardell
 Maintainer: Sergi Vilardell <sergi.vilardell@bsc.es>
-Description: This contains two tools to merge HEMs from different subexperiments. HRM, which uses order statistics to merge; and MUCH which merges using a multivariate normal distribution
+Description: This contains two tools to merge HEMs from different subexperiments. HRM, which uses order statistics to merge; and MUCH which merges using a multivariate normal distribution. The reference paper for HRM is: S. Vilardell, I. Serra, R. Santalla, E. Mezzetti, J. Abella and F. J. Cazorla, "HRM: Merging Hardware Event Monitors for Improved Timing Analysis of Complex MPSoCs," in IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 39, no. 11, pp. 3662-3673, Nov. 2020, <doi:10.1109/TCAD.2020.3013051>. This work has been supported by the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement No. 772773).
 License: GPL-3
 Encoding: UTF-8
+Depends: R (>= 3.6.0)
 LazyData: true
 RoxygenNote: 7.1.1
 Imports:
     dplyr,
+    DT,
     purrr,
-    data.table,
+    outliers,
+    tidyr,
+    stringr,
     rlang,
     MASS
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
